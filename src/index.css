@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Lato:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Chai Culture Brand Colors */
+    --background: 35 30% 95%;
+    --foreground: 25 45% 20%;
+
+    --card: 35 25% 92%;
+    --card-foreground: 25 45% 20%;
+
+    --popover: 35 25% 92%;
+    --popover-foreground: 25 45% 20%;
+
+    /* Deep Brown/Maroon */
+    --primary: 25 50% 30%;
+    --primary-foreground: 40 33% 97%;
+
+    /* Warm Cream */
+    --secondary: 35 30% 90%;
+    --secondary-foreground: 25 45% 20%;
+
+    --muted: 30 20% 80%;
+    --muted-foreground: 25 25% 45%;
+
+    /* Gold Accent */
+    --accent: 38 55% 55%;
+    --accent-foreground: 25 45% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 20% 85%;
+    --input: 30 20% 85%;
+    --ring: 38 55% 55%;
+
+    --radius: 0.5rem;
+
+    /* Custom Brand Colors */
+    --gold: 38 55% 55%;
+    --gold-light: 38 50% 70%;
+    --gold-dark: 38 60% 45%;
+    --brown: 25 50% 30%;
+    --brown-light: 25 40% 45%;
+    --brown-dark: 25 55% 22%;
+    --cream: 35 30% 95%;
+    --cream-dark: 35 25% 90%;
+    --warm-tan: 30 35% 60%;
+    --dark-brown: 20 45% 18%;
+
+    /* Shadows */
+    --shadow-gold: 0 4px 20px -4px hsl(38 55% 55% / 0.3);
+    --shadow-elegant: 0 10px 40px -10px hsl(25 45% 20% / 0.15);
+    --shadow-soft: 0 4px 12px hsl(25 45% 20% / 0.08);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: 'Lato', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer components {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+
+  .font-display-sc {
+    font-family: 'Playfair Display SC', serif;
+  }
+
+  .font-elegant {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  .font-body {
+    font-family: 'Lato', sans-serif;
+  }
+
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+
+  .text-brown {
+    color: hsl(var(--brown));
+  }
+
+  .bg-cream {
+    background-color: hsl(var(--cream));
+  }
+
+  .bg-brown {
+    background-color: hsl(var(--brown));
+  }
+
+  .bg-dark-brown {
+    background-color: hsl(var(--dark-brown));
+  }
+
+  .bg-warm-tan {
+    background-color: hsl(var(--warm-tan));
+  }
+
+  .border-gold {
+    border-color: hsl(var(--gold));
+  }
+
+  /* Small caps style */
+  .small-caps {
+    font-variant: small-caps;
+    letter-spacing: 0.1em;
+  }
+
+  /* Fade in up animation */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  .animate-fade-in-up-delay-1 {
+    animation: fadeInUp 0.8s ease-out 0.15s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-up-delay-2 {
+    animation: fadeInUp 0.8s ease-out 0.3s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-up-delay-3 {
+    animation: fadeInUp 0.8s ease-out 0.45s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-in-up-delay-4 {
+    animation: fadeInUp 0.8s ease-out 0.6s forwards;
+    opacity: 0;
+  }
+
+  /* Subtle decorative circles */
+  .decorative-circle {
+    position: absolute;
+    border: 1px solid hsl(var(--cream) / 0.2);
+    border-radius: 50%;
+    pointer-events: none;
+  }
+}
+
+@layer utilities {
+  .text-shadow-gold {
+    text-shadow: 0 2px 10px hsl(38 55% 55% / 0.3);
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+}
