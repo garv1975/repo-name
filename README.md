@@ -1,6 +1,6 @@
 
 
-# 🌐 Project Name
+# 🌐 Chai Culture
 
 This is a modern web application built using **React vite** and deployed on **Vercel**.  
 The project focuses on a clean UI, responsive design, and fast performance.
