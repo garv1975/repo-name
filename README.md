@@ -8,7 +8,7 @@ The project focuses on a clean UI, responsive design, and fast performance.
 ---
 
 ## 🚀 Live Demo
-🔗 https://your-project-name.vercel.app
+🔗 https://chai-culture-puce.vercel.app/
 
 ---
 
